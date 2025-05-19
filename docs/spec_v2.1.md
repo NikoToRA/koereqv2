@@ -25,7 +25,7 @@
   ├─ RecordingService      (AVAudioRecorder)
   ├─ STTService            (WhisperWrapper → .txt)
   ├─ SessionStore          (CoreData cache)
-  ├─ OpenAIService         (Azure GPT‑4o‑mini‑ja)
+  ├─ OpenAIService         (Azure GPT‑4‑1106‑preview / GPT‑4.1 mini)
   ├─ StorageService        (Azure Blob via SAS)
   ├─ QRService             (CIQRCodeGenerator)
   └─ UI (SwiftUI Views)
