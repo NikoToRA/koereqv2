@@ -12,9 +12,10 @@ class STTService {
     private func setupWhisperKit() {
         Task {
             do {
+                // modelName: "openai_whisper-base" または "openai_whisper-small" の使用を検討
                 whisperKit = try await WhisperKit(
                     modelFolder: URL(fileURLWithPath: NSTemporaryDirectory()),
-                    modelName: "tiny-ja",
+                    modelName: "openai_whisper-tiny",
                     computeOptions: .init(
                         preferredLanguage: "ja",
                         useFp16Inference: true
